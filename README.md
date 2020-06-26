@@ -14,8 +14,8 @@ Develop and automate PDF processing tasks like Compress PDF, Merge PDF, Split PD
 
 ## Requirements
 
-PHP 7.0 and later.
-Laravel 5.5 and later.
+PHP 7.2 and later.
+Laravel 7.x and later.
 
 ## Install
 
