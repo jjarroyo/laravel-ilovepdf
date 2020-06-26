@@ -1,0 +1,41 @@
+{
+    "name": "jjarroyo/laravel-ilovepdf",
+    "type": "library",
+    "description": "iLovePDF PHP API for Laravel",
+    "homepage": "https://github.com/jjarroyo/laravel-ilovepdf",
+    "license": "MIT",
+    "authors": [{
+        "name": "JJ Arroyo",
+        "email": "jorgejaraba18@gmail.com"
+
+    }],
+    "autoload": {
+        "psr-4": {
+            "JJArroyo\\LaravelIlovepdf\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JJArroyo\\LaravelIlovepdf\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": ">=7.2",
+        "ext-curl": "*",
+        "vlucas/phpdotenv": "^4.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "JJArroyo\\LaravelIlovepdf\\LaravelIlovepdfServiceProvider"
+            ],
+            "aliases": {
+                "IlovePDF": "JJArroyo\\LaravelIlovepdf\\Facades\\Ilovepdf"
+            }
+        }
+    }
+}
